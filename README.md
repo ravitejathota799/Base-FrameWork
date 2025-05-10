@@ -3,7 +3,7 @@
 This is a base framework for the projects:
 
 **Encapsulation:**
-Meaning: Restrict direct access to fields and provide controlled access.
+Restrict direct access to fields and provide controlled access.
 Example: Private web elements with public action methods.
 public class LoginPage {
  private WebElement un;
@@ -17,8 +17,7 @@ public void enterPassword(String password) {
 
 
 **Inheritance:**
-
-Meaning: Reuse common functionality across classes.
+ Reuse common functionality across classes.
 Example: Page classes inherit driver setup via PageFactory.
 public class BasePage {
  protected WebDriver driver;
@@ -33,15 +32,17 @@ public class HomePage extends BasePage {
  }
 }
 👉 Tip: Centralizing driver and element initialization keeps your page classes clean and DRY!
+
 **Polymorphism (Overloading):**
-Meaning: Same method name, different input parameters (compile-time polymorphism).
+Same method name, different input parameters (compile-time polymorphism).
 Example: Overloaded Actions methods.
 Actions actions = new Actions(driver);
 actions.moveToElement(element).perform();
 actions.moveToElement(element, 50, 50).click().perform();
 👉 Tip: Method Overloading gives flexibility when interacting with elements dynamically!
+
 **Polymorphism (Overriding):**
-Meaning: Subclass modifies parent class behavior (runtime polymorphism).
+Subclass modifies parent class behavior (runtime polymorphism).
 Example: Custom RetryAnalyzer overriding retry behavior in TestNG.
 public class RetryAnalyzer implements IRetryAnalyzer {
  private int retryCount = 0;
@@ -56,8 +57,9 @@ public class RetryAnalyzer implements IRetryAnalyzer {
  }
 }
 👉 Tip: Overriding retry() lets you control how many times failed tests are automatically retried!
+
 **Abstraction:**
-Meaning: Hide complex logic and expose simple actions to the user.
+Hide complex logic and expose simple actions to the user.
 Example: Abstract Base Test class for browser setup/teardown.
 // Abstract class
 public abstract class Browser {
