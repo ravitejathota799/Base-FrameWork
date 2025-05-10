@@ -14,6 +14,8 @@ public void enterPassword(String password) {
  pwd.sendKeys(password); }
 }
 👉 Tip: Always keep page elements private and expose only actions for better security and maintenance.
+
+
 **Inheritance:**
 
 Meaning: Reuse common functionality across classes.
