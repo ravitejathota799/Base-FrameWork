@@ -3,7 +3,6 @@
 This is a base framework for the projects:
 
 **Encapsulation:**
----------------------------------------------------------------------------------------------------------------------------------
 Meaning: Restrict direct access to fields and provide controlled access.
 Example: Private web elements with public action methods.
 public class LoginPage {
@@ -16,7 +15,7 @@ public void enterPassword(String password) {
 }
 👉 Tip: Always keep page elements private and expose only actions for better security and maintenance.
 **Inheritance:**
----------------------------------------------------------------------------------------------------------------------------------
+
 Meaning: Reuse common functionality across classes.
 Example: Page classes inherit driver setup via PageFactory.
 public class BasePage {
