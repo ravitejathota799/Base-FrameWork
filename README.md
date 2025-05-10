@@ -3,6 +3,7 @@
 This is a base framework for the projects:
 
 **Encapsulation:**
+---------------------------------------------------------------------------------------------------------------------------------
 Meaning: Restrict direct access to fields and provide controlled access.
 Example: Private web elements with public action methods.
 public class LoginPage {
